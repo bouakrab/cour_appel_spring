@@ -19,6 +19,6 @@ public class PlaintHasDataParties {
     @ManyToOne(targetEntity = Plaint.class)
     private Plaint plaint;
 
-    @ManyToOne(targetEntity = DataParties.class)
-    private DataParties dataParties;
+    @ManyToOne(targetEntity = DataPartie.class)
+    private DataPartie dataParties;
 }

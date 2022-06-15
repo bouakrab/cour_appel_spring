@@ -18,7 +18,7 @@ public class Pays {
     private int id;
     private String nom;
 
-    @OneToMany(targetEntity = DataParties.class, mappedBy = "pays")
-    private Collection<DataParties> dataParties;
+    @OneToMany(targetEntity = DataPartie.class, mappedBy = "pays")
+    private Collection<DataPartie> dataParties;
 
 }

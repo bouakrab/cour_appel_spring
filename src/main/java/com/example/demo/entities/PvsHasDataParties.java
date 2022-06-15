@@ -19,6 +19,6 @@ public class PvsHasDataParties {
     @ManyToOne(targetEntity = Pvs.class)
     private Pvs pvs;
 
-    @ManyToOne(targetEntity = DataParties.class)
-    private DataParties dataParties;
+    @ManyToOne(targetEntity = DataPartie.class)
+    private DataPartie dataParties;
 }

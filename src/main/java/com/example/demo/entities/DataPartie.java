@@ -13,7 +13,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class DataParties {
+public class DataPartie {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -34,9 +34,9 @@ public class DataParties {
     private Date DateNaiss;
     private String DataPersonnecol;
 
-    @ManyToOne(targetEntity = PersonneMorales.class)
+    @ManyToOne(targetEntity = PersonneMorale.class)
     @JoinColumn(name = "PersonneMoraleID")
-    private PersonneMorales personneMorales;
+    private PersonneMorale personneMorale;
 
     @ManyToOne(targetEntity = Pays.class)
     @JoinColumn(name = "PaysID")

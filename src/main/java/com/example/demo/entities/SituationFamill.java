@@ -18,6 +18,6 @@ public class SituationFamill {
     private int id;
     private String nom;
 
-    @OneToMany(targetEntity = DataParties.class, mappedBy = "situationFamill")
-    private Collection<DataParties> dataParties;
+    @OneToMany(targetEntity = DataPartie.class, mappedBy = "situationFamill")
+    private Collection<DataPartie> dataParties;
 }

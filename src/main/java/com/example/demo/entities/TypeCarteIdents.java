@@ -18,7 +18,7 @@ public class TypeCarteIdents {
     private int id;
     private String nom;
 
-    @OneToMany(targetEntity = DataParties.class, mappedBy = "typeCarteIdents")
-    private Collection<DataParties> dataParties;
+    @OneToMany(targetEntity = DataPartie.class, mappedBy = "typeCarteIdents")
+    private Collection<DataPartie> dataParties;
 
 }

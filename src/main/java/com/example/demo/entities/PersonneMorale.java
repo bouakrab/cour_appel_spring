@@ -12,12 +12,12 @@ import java.util.Collection;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class PersonneMorales {
+public class PersonneMorale {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nom;
 
-    @OneToMany(targetEntity = DataParties.class, mappedBy = "personneMorales")
-    private Collection<DataParties> dataParties;
+    @OneToMany(targetEntity = DataPartie.class, mappedBy = "personneMorale")
+    private Collection<DataPartie> dataPartie;
 }

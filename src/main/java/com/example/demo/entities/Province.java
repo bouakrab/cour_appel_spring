@@ -19,7 +19,7 @@ public class Province {
     private int id;
     private String nom;
 
-    @OneToMany(targetEntity = DataParties.class, mappedBy = "province")
-    private Collection<DataParties> dataParties;
+    @OneToMany(targetEntity = DataPartie.class, mappedBy = "province")
+    private Collection<DataPartie> dataParties;
 
 }
